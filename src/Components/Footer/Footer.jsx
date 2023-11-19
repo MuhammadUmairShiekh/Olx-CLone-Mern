@@ -16,7 +16,7 @@ const Footer = () => {
             <div className='logo'>
               {/* <motion.img whileTap={{ scale: 1.2 }} src={logo} alt="" /> */}
               <div>
-                <h5 className='text-white fs-6'>DREAM-FURNITURE  <br /> Since 1999</h5>
+                <h5 className='text-black fs-6'>OLX PAKISTAN<br /> Since 1999</h5>
               </div>
             </div>
             <p className='footer_text mt-4'>
@@ -32,16 +32,16 @@ const Footer = () => {
               </h4>
               <ListGroup className='footer_contact  mb-3' >
                 <ListGroupItem className='ps-0 border-0 ' >
-                  <NavLink to={"#"}> MODERN SOFA  </NavLink>
+                  <NavLink to={"#"}> Mobile Phone  </NavLink>
                 </ListGroupItem >
                 <ListGroupItem className='ps-0 border-0'>
-                  <NavLink to={"#"}> BEST BED </NavLink>
+                  <NavLink to={"#"}> Cars </NavLink>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0'>
-                  <NavLink to={"#"}> DREAM FURNITURE</NavLink>
+                  <NavLink to={"#"}> MotorCycles </NavLink>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0'>
-                  <NavLink to={"#"}> ARM CHAIR  </NavLink>
+                  <NavLink to={"#"}> House  </NavLink>
                 </ListGroupItem>
               </ListGroup>
             </div>
@@ -83,14 +83,14 @@ const Footer = () => {
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                   <span><i class="ri-mail-send-fill"></i></span>
-                  <p>Email@Dreamfurniture.com.pk</p>
+                  <p>Olx@.com.pk</p>
                 </ListGroupItem>
               </ListGroup>
             </div>
           </Col>
           <Col lg='12' className='mb-4'>
             <p className="footer_copyright">
-              <i class="ri-copyright-line"></i> Copyright {year} Dream Furniture All Right Reserved</p>
+              <i class="ri-copyright-line"></i> Copyright {year} Olx Pakistan All Right Reserved</p>
           </Col>
         </Row>
       </Container>

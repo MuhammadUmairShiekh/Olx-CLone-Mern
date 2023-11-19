@@ -1,0 +1,55 @@
+.itemlist h3{
+    display: flex;
+    justify-content: center;
+    margin-right: 9rem;
+    margin-bottom: 2rem;    
+}
+
+
+.catagories_item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
+    margin-bottom: 3rem;
+    
+}
+.catagories_item ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    bottom: 3rem;
+    left: 0.2rem;    
+    gap: 2rem;       
+    cursor: pointer;    
+}
+.catagories_item ul li{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+
+}
+.catagories_item ul li img{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    
+}
+.catagories_item ul li span{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 0.4rem;
+    margin-left: 2.5rem;
+    font-weight: 600;
+    width: 90px;
+    flex-wrap: wrap;
+}

@@ -8,6 +8,7 @@ import ProductDetail from '../Page/ProductDetail';
 import Login from '../Page/Login';
 import SignUP from '../Page/SignUP';
 import Footer from '../Components/Footer/Footer'
+import ProductPost from '../Page/ProductPost'
 
 
 const router = createBrowserRouter([
@@ -15,17 +16,21 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Header />,
-    },
+        children:[       
+    
     {
-        path: "/Home",
+        path: "/",
         element: <Home />
 
     },
     {
         path: "/Product",
         element: <Product />
-    }
-    ,
+    },
+    {
+        path: '/PostAds',
+        element: <ProductPost/>
+    },
     {
         path: "/Product/:id",
         element: <ProductDetail />
@@ -35,6 +40,9 @@ const router = createBrowserRouter([
         path: "/ContactUs",
         element: <Contactus />
     },
+]
+
+},
     {
         path: "/Login",
         element: <Login />
