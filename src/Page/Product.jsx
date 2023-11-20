@@ -11,7 +11,7 @@ const Product = () => {
   async function getAdsData() {
     const getAdsData = await fetch("http://localhost:5000/ads")
     const ads = await getAdsData.json()
-    console.log(ads.data)
+    console.log(setPhotos(ads.data))
     setPhotos(ads.data)
   }
 

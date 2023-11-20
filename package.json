@@ -16,6 +16,7 @@
     "reactstrap": "^9.2.1",
     "remixicon": "^3.5.0",
     "remixicon-react": "^1.0.0",
+    "sweetalert2": "^11.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

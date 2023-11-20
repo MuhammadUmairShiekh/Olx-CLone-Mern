@@ -55,7 +55,8 @@ const Header = () => {
                       <span><i class="ri-notification-3-line"></i></span>
                     </li>
                     <li className="list3">
-                      <span>< motion.img whileTap={{ scale: 1.3 }} src={User} alt="user" /></span>
+                      {/* <span>< motion.img whileTap={{ scale: 1.3 }} src={User} alt="user" /></span> */}
+                      <button>  <NavLink to={"/Login"} >  Login </NavLink></button>
 
                     </li>
                     <li className="list3">
