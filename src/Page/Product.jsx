@@ -11,7 +11,7 @@ const Product = () => {
   async function getAdsData() {
     const getAdsData = await fetch("http://localhost:5000/ads")
     const ads = await getAdsData.json()
-    console.log(setPhotos(ads.data))
+    console.log(ads.data)
     setPhotos(ads.data)
   }
 
@@ -21,7 +21,7 @@ const Product = () => {
 
 
   if (!phos) {
-    return <div className='loader' ></div>
+    return <div className='loader'>  You need to Login </div>
   }
   return (
     <div className="main" >

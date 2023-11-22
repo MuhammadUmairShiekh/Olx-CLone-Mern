@@ -38,6 +38,16 @@ router.get('/:id'), async (req, res) => {
 
 }
 
+// router.get('/:id', async (req, res) => {
+//     console.log('req --->', req.params.id)
+
+//     const ad = await Ads.findOne({ _id: req.params.id })
+//     res.send({
+//         message: 'data fetched successfully',
+//         data: ad
+//     })
+// })
+
 router.post('/addData', async (req, res) => {
     try {
         const ad = new Ads(req.body);
@@ -52,13 +62,13 @@ router.post('/addData', async (req, res) => {
         })
     }
 })
-router.put('/updateData/:id', async (req, res) => {
+router.put('/updateData/', async (req, res) => {
     // console.log(req.body)
 
 
     try {
         const { _id } = req.body
-        const data = await Ads.findoneAndUpdate({ _id }, req.body);
+        const data = await Ads.findoneAndUpdate({ _id: _id }, req.body);
         res.send({
             message: 'data updated successfully',
             data
