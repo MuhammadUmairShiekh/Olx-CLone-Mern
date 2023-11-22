@@ -1,7 +1,8 @@
 import React from 'react'
 import image from '../Images/property-for-rent.8436595fbaa90d47f0178006f57090a8.png'
-import { useState, useParams, useEffect, NavLink } from 'react'
+import { useState, useEffect, NavLink } from 'react'
 import { Card } from 'reactstrap'
+import { useParams } from 'react-router-dom'
 
 const ProductDetail = () => {
   const [prodc, setProdc] = useState('')
@@ -13,7 +14,7 @@ const ProductDetail = () => {
   }, [])
   async function signalAdsData() {
     const getAdsData = await fetch("http://localhost:5000/ads/" + _id)
-    const ads = await signalAdsData.json()
+    const ads = await getAdsData.json()
     console.log(ads.data)
     setProdc(ads.data)
     console.log(setProdc(ads.data))
